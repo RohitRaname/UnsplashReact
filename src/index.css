@@ -1,0 +1,152 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  border-radius: 0;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding: 2rem 0.5rem;
+  max-width: 120rem;
+  width: 90vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 24rem));
+}
+
+img {
+  height: 10rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.toggle-theme {
+  position: fixed;
+  top: 1.5rem;
+  right: 3rem;
+  background: transparent;
+}
+
+main {
+  background: var(--backgroundColor);
+}
+
+h1 {
+  color: #535bf2;
+  font-size: clamp(3rem, 5vw, 5rem);
+}
+h1,
+form {
+  margin-bottom: 3rem;
+}
+
+button {
+  border-radius: 0;
+}
+
+form {
+  display: flex;
+  max-width: 40rem;
+  width: 100%;
+}
+
+input {
+  outline: none;
+  padding: 0.6em 1.2em;
+  color: var(--textColor);
+  width: 100%;
+  flex: 1;
+  background: transparent;
+  border: 1px solid var(--grey-500);
+}
+
+.toggle-theme {
+  outline: none;
+  border: none;
+}
+
+.toggle-theme:focus {
+  outline: none;
+}
+
+.icon-sun,
+.icon-moon {
+  font-size: 1.5rem;
+  color: var(--textColor);
+}
